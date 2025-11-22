@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}ThermoPlus - خدمات تخصصی چیلر و تأسیسات{% endblock %}
+
+{% block content %}
+<!-- بخش قهر -->
+<section class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">خدمات تخصصی چیلر و تأسیسات</h1>
+        <p class="lead">با سال‌ها تجربه در زمینه نگهداری، تعمیر و راه‌اندازی سیستم‌های تهویه مطبوع</p>
+        <a href="{% url 'contact' %}" class="btn btn-primary btn-lg mt-3">درخواست خدمات</a>
+    </div>
+</section>
+
+<!-- خدمات اصلی -->
+<section class="py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <i class="bi bi-tools service-icon"></i>
+                <h3>تعمیرات چیلر</h3>
+                <p>تعمیرات تخصصی انواع چیلرهای تراکمی و جذبی</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <i class="bi bi-calendar-check service-icon"></i>
+                <h3>سرویس دوره‌ای</h3>
+                <p>نگهداری پیشگیرانه برای افزایش عمر دستگاه</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <i class="bi bi-wrench service-icon"></i>
+                <h3>نصب و راه‌اندازی</h3>
+                <p>نصب حرفه‌ای سیستم‌های تهویه مطبوع</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <i class="bi bi-gear service-icon"></i>
+                <h3>فروش قطعات</h3>
+                <p>تأمین قطعات اورجینال با گارانتی معتبر</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

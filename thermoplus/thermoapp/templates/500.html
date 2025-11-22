@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}خطای سرور - ThermoPlus{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <!-- آیکون خطا -->
+            <div class="mb-4">
+                <i class="bi bi-server text-danger" style="font-size: 5rem;"></i>
+            </div>
+            
+            <!-- عنوان -->
+            <h1 class="display-1 fw-bold text-danger">۵۰۰</h1>
+            <h2 class="mb-4">خطای داخلی سرور!</h2>
+            
+            <!-- پیام توضیح -->
+            <p class="lead mb-4">
+                متأسفانه مشکلی در سرور پیش آمده است. ما در حال بررسی و رفع مشکل هستیم.
+            </p>
+            
+            <!-- دکمه‌های اقدام -->
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="{% url 'thermoapp:home' %}" class="btn btn-primary btn-lg">
+                    <i class="bi bi-house-fill me-2"></i>برگشت به صفحه اصلی
+                </a>
+                <button onclick="window.location.reload()" class="btn btn-outline-primary btn-lg">
+                    <i class="bi bi-arrow-clockwise me-2"></i>بارگذاری مجدد
+                </button>
+            </div>
+
+            <!-- اطلاعات تماس فوری -->
+            <div class="card border-danger mt-4">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">
+                        <i class="bi bi-telephone-fill me-2"></i>پشتیبانی فنی
+                    </h5>
+                    <p class="mb-2">📞 ۰۲۱-۱۲۳۴۵۶۷۸</p>
+                    <p class="mb-0">📱 ۰۹۱۲-۱۲۳-۴۵۶۷</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
